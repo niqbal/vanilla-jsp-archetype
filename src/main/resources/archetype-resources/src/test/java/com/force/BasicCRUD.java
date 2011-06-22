@@ -1,7 +1,7 @@
-package com.force;
+package ${package};
 
 
-import com.force.model.Task;
+import ${package}.model.Task;
 import org.junit.Test;
 
 import javax.persistence.EntityManager;
