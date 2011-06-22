@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.force.sdk</groupId>
-  <artifactId>jsp-archetype</artifactId>
+  <artifactId>vanilla-jsp-archetype</artifactId>
   <version>22.0.1-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
-  <name>jsp-archetype</name>
+  <name>vanilla-jsp-archetype</name>
 
   <distributionManagement>
     <repository>

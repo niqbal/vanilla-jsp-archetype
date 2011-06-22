@@ -11,7 +11,7 @@
 	</appender>
 	
 	<!-- Application Loggers -->
-	<logger name="com.force">
+	<logger name="${package}">
 		<level value="info" />
 	</logger>
 	

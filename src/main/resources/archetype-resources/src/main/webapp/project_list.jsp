@@ -1,14 +1,8 @@
 <%@ page import="java.util.List" %>
-<%@ page import="${package}.service.DatabaseService" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="tags" tagdir="/WEB-INF/tags" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page session="false" %>
-
-<%
-    List list = DatabaseService.getList("Project");
-    request.setAttribute("list",list);
-%>
 
 <tags:mainlayout>
 
@@ -22,14 +16,14 @@
 			</tr>
 			<c:forEach items="${dollar}{list}" var="project">
 				<tr>
-					<td><a href="new_project.jsp?id=${dollar}{project.id}">${dollar}{project.name}</a></td>
+					<td><a href="NewProject?id=${dollar}{project.id}">${dollar}{project.name}</a></td>
 					<td>${dollar}{project.desc}</td>
 				</tr>
 			</c:forEach>
 		</table>
 		<p/>
 		<form action="" method="post">
-			<input type="button" name="New Project" value="New Project" onclick="location.href='new_project.jsp'"/>
+			<input type="button" name="New Project" value="New Project" onclick="location.href='NewProject'"/>
 		</form>
 	</jsp:body>
 

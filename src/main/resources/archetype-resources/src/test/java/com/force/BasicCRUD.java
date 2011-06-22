@@ -29,5 +29,4 @@ public class BasicCRUD {
         Assert.assertEquals(t.getName(), fetched.getName());
         Assert.assertEquals(t.getDesc(), fetched.getDesc());
     }
-
 }

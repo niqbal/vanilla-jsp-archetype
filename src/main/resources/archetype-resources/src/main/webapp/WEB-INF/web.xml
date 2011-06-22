@@ -5,37 +5,63 @@
 		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
            version="2.5">
 
-    #if ( ${enableSecurity} == "true" )
-        <!-- Enables Security -->
-        <filter>
-            <filter-name>AuthFilter</filter-name>
-            <filter-class>com.force.sdk.oauth.AuthFilter</filter-class>
-                 <init-param>
-                    <param-name>connectionName</param-name>
-                    <param-value>forceDatabase</param-value>
-                </init-param>
-        </filter>
-        <filter-mapping>
-            <filter-name>AuthFilter</filter-name>
-            <url-pattern>/*</url-pattern>
-        </filter-mapping>
-    #else
-        <!--  Uncomment this section to enable security -->
-        <!-- Enables Security
-            <filter>
-                <filter-name>AuthFilter</filter-name>
-                <filter-class>com.force.sdk.oauth.AuthFilter</filter-class>
-                     <init-param>
-                        <param-name>connectionName</param-name>
-                        <param-value>forceDatabase</param-value>
-                    </init-param>
-            </filter>
-            <filter-mapping>
-                <filter-name>AuthFilter</filter-name>
-                <url-pattern>/*</url-pattern>
-            </filter-mapping>
-         -->
-    #end
+    <!-- Enables Security
+    <filter>
+        <filter-name>AuthFilter</filter-name>
+        <filter-class>com.force.sdk.oauth.AuthFilter</filter-class>
+             <init-param>
+                <param-name>connectionName</param-name>
+                <param-value>forceDatabase</param-value>
+            </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>AuthFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    -->
+    <servlet>
+        <display-name>SaveProject</display-name>
+        <servlet-name>SaveProject</servlet-name>
+        <servlet-class>${package}.sevlets.SaveProject</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SaveProject</servlet-name>
+        <url-pattern>/SaveProject</url-pattern>
+    </servlet-mapping>
 
+    <servlet>
+        <display-name>SaveTask</display-name>
+        <servlet-name>SaveTask</servlet-name>
+        <servlet-class>${package}.sevlets.SaveTask</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SaveTask</servlet-name>
+        <url-pattern>/SaveTask</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <display-name>ProjectList</display-name>
+        <servlet-name>ProjectList</servlet-name>
+        <servlet-class>${package}.sevlets.ProjectList</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProjectList</servlet-name>
+        <url-pattern>/ProjectList</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <display-name>NewProject</display-name>
+        <servlet-name>NewProject</servlet-name>
+        <servlet-class>${package}.sevlets.NewProject</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NewProject</servlet-name>
+        <url-pattern>/NewProject</url-pattern>
+    </servlet-mapping>
 
 </web-app>
