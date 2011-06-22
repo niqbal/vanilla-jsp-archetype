@@ -1,4 +1,4 @@
-package ${package}.sevlets;
+package ${package}.servlets;
 
 import ${package}.model.Project;
 import ${package}.model.Task;
