@@ -1,5 +1,5 @@
-<%@ page import="com.force.service.DatabaseService" %>
-<jsp:useBean id="project" scope="request" class="com.force.model.Project" >
+<%@ page import="${package}.service.DatabaseService" %>
+<jsp:useBean id="project" scope="request" class="${package}.model.Project" >
 
 <%--
   Created by IntelliJ IDEA.

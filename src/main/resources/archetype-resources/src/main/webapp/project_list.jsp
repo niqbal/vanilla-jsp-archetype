@@ -1,5 +1,5 @@
 <%@ page import="java.util.List" %>
-<%@ page import="com.force.service.DatabaseService" %>
+<%@ page import="${package}.service.DatabaseService" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="tags" tagdir="/WEB-INF/tags" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>

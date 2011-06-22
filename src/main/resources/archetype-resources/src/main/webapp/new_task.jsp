@@ -1,5 +1,5 @@
-<%@ page import="com.force.service.DatabaseService" %>
-<jsp:useBean id="task" scope="request" class="com.force.model.Task" >
+<%@ page import="${package}.service.DatabaseService" %>
+<jsp:useBean id="task" scope="request" class="${package}.model.Task" >
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="tags" tagdir="/WEB-INF/tags" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>

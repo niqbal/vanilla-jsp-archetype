@@ -1,7 +1,7 @@
-package com.force.service;
+package ${package}.service;
 
-import com.force.model.Project;
-import com.force.model.Task;
+import ${package}.model.Project;
+import ${package}.model.Task;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

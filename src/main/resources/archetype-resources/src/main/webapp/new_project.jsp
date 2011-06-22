@@ -1,6 +1,6 @@
-<%@ page import="com.force.service.DatabaseService" %>
-<%@ page import="com.force.model.Project" %>
-<jsp:useBean id="project" scope="request" class="com.force.model.Project" >
+<%@ page import="${package}.service.DatabaseService" %>
+<%@ page import="${package}.model.Project" %>
+<jsp:useBean id="project" scope="request" class="${package}.model.Project" >
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="tags" tagdir="/WEB-INF/tags" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>

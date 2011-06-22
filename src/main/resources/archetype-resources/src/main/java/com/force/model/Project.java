@@ -1,4 +1,4 @@
-package com.force.model;
+package ${package}.model;
 
 import javax.persistence.*;
 import java.util.List;
