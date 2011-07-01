@@ -81,7 +81,7 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
 			<version>2.5</version>
-			<!--scope>provided</scope-->
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
@@ -277,6 +277,8 @@
 				<configuration>
 					<api>JPA</api>
 					<verbose>true</verbose>
+          <!-- excluding servlets; so DataNucleus does not try to enhance them -->
+          <metadataExcludes>**/servlets/*.class</metadataExcludes>
 				</configuration>
 				<executions>
 					<execution>
