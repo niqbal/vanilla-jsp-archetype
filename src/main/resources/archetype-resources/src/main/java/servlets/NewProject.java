@@ -21,10 +21,12 @@ import java.util.logging.Logger;
 public class NewProject extends HttpServlet {
     public static Logger logger = Logger.getLogger("${package}.servlets");
 
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
     }
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         if(request.getParameter("id") != null) {
             Project p = DatabaseService.getProject(request.getParameter("id"));

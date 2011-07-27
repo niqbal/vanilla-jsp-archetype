@@ -18,10 +18,13 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public class ProjectList extends HttpServlet {
+    
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
     }
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List list = DatabaseService.getList("Project");
         request.setAttribute("list",list);
