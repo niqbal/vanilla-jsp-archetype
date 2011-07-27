@@ -2,14 +2,6 @@
 <archetype-descriptor xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd" name="springmvc-archetype"
     xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <requiredProperties>
-    <requiredProperty key="enableEntity">
-      <defaultValue>false</defaultValue>
-    </requiredProperty>
-    <requiredProperty key="enableSecurity">
-      <defaultValue>false</defaultValue>
-    </requiredProperty>
-  </requiredProperties>
   <fileSets>
     <fileSet filtered="true" packaged="true" encoding="UTF-8">
       <directory>src/main/java</directory>
@@ -22,7 +14,7 @@
       <includes>
         <include>**/*.jsp</include>
         <include>**/*.xml</include>
-	<include>**/*.tag</include>
+        <include>**/*.tag</include>
       </includes>
     </fileSet>
     <fileSet filtered="true" encoding="UTF-8">
